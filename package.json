@@ -1,0 +1,22 @@
+{
+  "name": "boyco",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate": "tsx src/generate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@openzeppelin/merkle-tree": "^1.0.7",
+    "ethers": "^6.13.5",
+    "fs": "^0.0.1-security",
+    "tsx": "^4.19.2"
+  }
+}

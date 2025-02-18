@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "verbatimModuleSyntax": false,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "declaration": false,
+    "ignoreDeprecations": "5.0",
+    "isolatedModules": true,
+    "strict": false,
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "node",
+    "module": "ES2022",
+    "noEmit": true,
+    "outDir": "dist",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@supabase/postgrest-js": ["node_modules/@supabase/postgrest-js"],
+      "@wagmi/*": ["node_modules/@wagmi/*"]
+    },
+    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
