@@ -5,7 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "generate": "tsx src/generate.ts"
+    "generate": "tsx src/generate.ts",
+    "verify": "tsx src/verify-roots.ts",
+    "store": "tsx src/store-in-db.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,12 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
     "@openzeppelin/merkle-tree": "^1.0.7",
+    "dotenv": "^16.4.7",
     "ethers": "^6.13.5",
     "fs": "^0.0.1-security",
+    "graphql-request": "^7.1.2",
     "tsx": "^4.19.2"
   }
 }

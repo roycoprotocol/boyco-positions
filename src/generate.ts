@@ -7,10 +7,21 @@ import {
   type BoycoPosition,
 } from "./utils";
 import { writeFile } from "fs/promises";
+import { existsSync } from "fs";
 
 export const computeMerkleProofsByRawMarketRefId = async (
   rawMarketRefId: string
 ) => {
+  const outputPath = `./src/data/${rawMarketRefId}.json`;
+
+  // Check if file already exists
+  if (existsSync(outputPath)) {
+    console.log(
+      `\n=> Skipping Market ID: ${rawMarketRefId} - JSON file already exists`
+    );
+    return;
+  }
+
   console.log(
     `\n=> Computing Merkle Proofs for Market ID: ${rawMarketRefId}...`
   );
@@ -79,7 +90,7 @@ export const computeMerkleProofsByRawMarketRefId = async (
     proofs,
   };
 
-  await createJsonFile(data, `./src/data/${rawMarketRefId}.json`);
+  await createJsonFile(data, outputPath);
 };
 
 export const main = async () => {
