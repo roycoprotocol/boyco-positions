@@ -139,8 +139,7 @@ const main = async () => {
         JSON.stringify(randomPosition, null, 2) +
         "\n```\n\n" +
         `### Simulation\n\n` +
-        `Tenderly Link: [${simulationId}](${simulation.url})\n` +
-        `Status: ${status}\n\n`
+        `Tenderly Link: [${simulationId}](${simulation.url})\n\n`
     );
 
     // Store simulation data
