@@ -7,7 +7,9 @@
   "scripts": {
     "generate": "tsx src/generate.ts",
     "verify": "tsx src/verify-roots.ts",
-    "store": "tsx src/store-in-db.ts"
+    "store": "tsx src/store-in-db.ts",
+    "find": "tsx src/find-all-receipt-tokens.ts",
+    "simulate": "tsx src/simulate.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +20,12 @@
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
     "@openzeppelin/merkle-tree": "^1.0.7",
+    "@tenderly/sdk": "^0.3.0",
     "dotenv": "^16.4.7",
-    "ethers": "^6.13.5",
+    "ethers": "5.4.2",
     "fs": "^0.0.1-security",
     "graphql-request": "^7.1.2",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "viem": "^2.23.5"
   }
 }

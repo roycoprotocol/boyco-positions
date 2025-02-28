@@ -43,6 +43,7 @@ export type BoycoPosition = {
   bridge_transaction_hash: string;
   process_transaction_hash: string;
   execute_transaction_hash: string;
+  merkle_proof: string[];
 };
 
 export const createJsonFile = async (data: any, filePath: string) => {
