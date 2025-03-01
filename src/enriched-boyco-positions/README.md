@@ -43,3 +43,5 @@
 ```
 receipt_token_raw_amount = (amount_deposited / total_amount_bridged) * total_receipt_token_amount_on_berachain
 ```
+
+> Note: We have already calculated the amount owed to each weiroll wallet on Berachain in the `receipt_token_raw_amount` column -- so you don't need to re-calculate receipt token amount for each position -- the formula above was just for reference.
